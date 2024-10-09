@@ -3,71 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CV of Ahmed Elmeligy">
+    <meta name="description" content="Ahmed Elmeligy's CV">
     <title>Ahmed Elmeligy's CV</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            padding: 20px;
             background-color: #f4f4f4;
         }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        .container {
+        .cv-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
             padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
-        h1, h2, h3 {
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
             color: #333;
         }
         .section {
             margin-bottom: 20px;
-            background: #fff;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         }
-        .contact-info, .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+        .section-title {
+            font-size: 18px;
+            color: #444;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        p, li {
+            line-height: 1.6;
+            color: #333;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .contact-info, .skills, .languages {
+            margin-bottom: 10px;
         }
         .skills span, .languages span {
-            background: #ddd;
+            display: inline-block;
+            background: #eee;
             padding: 5px 10px;
             border-radius: 5px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Ahmed Elmeligy's CV</h1>
-    </header>
+    <div class="cv-container">
+        <header>
+            <h1>Ahmed Elmeligy</h1>
+            <p>E-Mail: <a href="mailto:elmeligy.ahmed96@gmail.com">elmeligy.ahmed96@gmail.com</a></p>
+            <p>Phone: +49 178 1640387</p>
+            <p>Address: Feuerbachstraße 38, 67659 Kaiserslautern, Germany</p>
+        </header>
 
-    <div class="container">
         <section class="section">
-            <h2>Personal Information</h2>
+            <div class="section-title">Personal Information</div>
             <p><strong>Date of Birth:</strong> October 22, 1996</p>
             <p><strong>Place of Birth:</strong> Alexandria, Egypt</p>
             <p><strong>Marital Status:</strong> Married, no children</p>
             <p><strong>Nationality:</strong> Egyptian (German citizenship applied)</p>
             <p><strong>Work Permit:</strong> Permanent residence permit</p>
-            <p><strong>Address:</strong> Feuerbachstraße 38, 67659 Kaiserslautern, Germany</p>
-            <p><strong>Email:</strong> <a href="mailto:elmeligy.ahmed96@gmail.com">elmeligy.ahmed96@gmail.com</a></p>
-            <p><strong>Phone:</strong> +49 178 1640387</p>
         </section>
 
+        <hr>
+
         <section class="section">
-            <h2>Professional Profile</h2>
+            <div class="section-title">Professional Profile</div>
             <p>I am a nanoscientist and spectroscopy expert with extensive knowledge in analytical and physical chemistry. My work focuses on quality control and analytical methods to ensure precision and reliability in research and development.</p>
         </section>
 
+        <hr>
+
         <section class="section">
-            <h2>Work Experience (3 years)</h2>
+            <div class="section-title">Work Experience (3 years)</div>
             <p><strong>01/2022 – 01/2025:</strong> Scientist (Physical Chemist) at RPTU, Kaiserslautern, Germany</p>
             <ul>
                 <li>Development and characterization of n-TiO2 nanoparticles through natural environment and laboratory coatings.</li>
@@ -79,28 +105,34 @@
             </ul>
         </section>
 
+        <hr>
+
         <section class="section">
-            <h2>Education</h2>
+            <div class="section-title">Education</div>
             <p><strong>10/2018 – 10/2021:</strong> Master of Science, University of Siegen, Germany (Grade: 2.3)</p>
             <p>Thesis: "Investigation of hydrophobized surface nano-holes in water using atomic force microscopy."</p>
             <p><strong>09/2014 – 06/2018:</strong> Bachelor of Science, Alexandria University, Egypt (Grade: 2.25)</p>
             <p>Thesis: "Analysis of Nile water contamination."</p>
         </section>
 
+        <hr>
+
         <section class="section">
-            <h2>Skills</h2>
+            <div class="section-title">Skills</div>
             <div class="skills">
                 <span>Python & R programming</span>
                 <span>Data analysis & scientific computing</span>
-                <span>MS Office (Word, Excel, PowerPoint)</span>
+                <span>MS Office</span>
                 <span>Origin, QtiPlot</span>
                 <span>Inkscape (Scientific diagrams)</span>
                 <span>TinkerCad 3D Printing</span>
             </div>
         </section>
 
+        <hr>
+
         <section class="section">
-            <h2>Languages</h2>
+            <div class="section-title">Languages</div>
             <div class="languages">
                 <span>Arabic: Native</span>
                 <span>German: B2 (Very good)</span>
@@ -108,8 +140,10 @@
             </div>
         </section>
 
+        <hr>
+
         <section class="section">
-            <h2>Hobbies</h2>
+            <div class="section-title">Hobbies</div>
             <p>Reading: Staying up-to-date with scientific research and literature.</p>
         </section>
     </div>
